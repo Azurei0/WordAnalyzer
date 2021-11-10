@@ -39,21 +39,9 @@
         totalCharacter: 0,
         vowelCount: 0,
         consonantCount: 0,
-        //inputArray: [],
       }
     }
 
-    // splitCountWordInput(){
-    //   var inputArray = [];
-    //   inputArray = this.state.wordInput.split('');
-    //   var vowelCount = 0, consonantCount = 0;
-    //   for(var i=0;i <= inputArray.length; i++){
-    //     switch(this.state.inputArray[i]){
-    //       case'A','E','I','O','U','a','e','i','o','u': vowelCount+=1;;
-    //       default:  consonantCount+=1;
-    //     }
-    //   }
-    // }
     
     updateCount(){ 
       var inputArray = this.state.wordInput.split('');
@@ -62,7 +50,8 @@
       for(var i=0;i < inputArray.length; i++){
         
         switch(inputArray[i]){
-          case'A':case'E':case'I':case'O':case'U':case'a':case'e':case'i':case'o':case'u': {this.setState({vowelCount: this.state.vowelCount+=1});}
+          case'A':case'E':case'I':case'O':case'U':case'a':case'e':case'i':case'o':case'u': {this.setState({vowelCount: this.state.vowelCount+=1});}break;
+          case ' ': break;
           default:  this.setState({consonantCount: this.state.consonantCount+=1});
         }
       }
