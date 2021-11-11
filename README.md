@@ -20,7 +20,7 @@ constructor() {
 <TextInput
 	placeholder= 'Type Here!' // secondary input prompt in text space
 	onChangeText = (text) => setState(wordInput: text) // update text into WordInput
-													   // on every text change
+			                                   // on every text change
 />
 <Button
 	title= 'Analyze!' // text on the button
@@ -30,7 +30,7 @@ constructor() {
 <Text>Vowels: {this.state.vowelCount}</Text> // output for vowel counter
 <Text>Consonants: {this.state.ConsonantCount}</Text> // output for consonant counter
 <Text>No of Characters: {this.state.totalCharacter}</Text> // output for total character 
-														   // counter
+							   // counter
 </View>
 ```
 - function and logic for the application
